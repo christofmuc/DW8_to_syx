@@ -13,7 +13,6 @@ for root, dirs, files in os.walk(".", topdown=False):
         input_name = os.path.join(root, name)
         basename, ext = os.path.splitext(input_name)
         if ext.upper() == '.DW8':
-            #input_file = R'D:\Christof\Music\DW8000\Patches\DW8-Format-from-textfile.com\FCTSIDEA.DW8'
             patch_number = 1
             with open(input_name, 'rb') as input_file:
                 data = list(input_file.read())
